@@ -25,4 +25,16 @@ class RentalTest {
     public void getMovie() {
         assertEquals(movie, rental.getMovie());
     }
+
+    @Test
+    @DisplayName("Get FrequentRenterPoints")
+    public void getFrequentRenterPoints() {
+        assertEquals(1, rental.getFrequentRenterPoints());
+    }
+
+    @Test
+    @DisplayName("Get Charge")
+    public void getCharge() {
+        assertEquals(14.0, rental.getCharge(), 0);
+    }
 }

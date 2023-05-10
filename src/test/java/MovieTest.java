@@ -23,4 +23,16 @@ class MovieTest {
     public void getTitle() {
         assertEquals("Movie Title", movie.getTitle());
     }
+
+    @Test
+    @DisplayName("Get FrequentRenterPoints")
+    public void getFrequentRenterPoints() {
+        assertEquals(1, movie.getFrequentRenterPoints(0));
+    }
+
+    @Test
+    @DisplayName("Get Charge")
+    public void getCharge() {
+        assertEquals(14.0, movie.getCharge(10), 0);
+    }
 }
