@@ -1,13 +1,17 @@
 public class Movie {
+
     public static final int CHILDRENS = 2;
     public static final int REGULAR = 0;
     public static final int NEW_RELEASE = 1;
+
     private String _title;
-    private int _priceCode;
+    private Price _price;
+
     public Movie(String newtitle, int newpriceCode) {
         _title = newtitle;
-        setPriceCode(_priceCode);
+        setPriceCode(newpriceCode);
     }
+
     public int getPriceCode() {
         return _price.getPriceCode();
     }
@@ -26,7 +30,7 @@ public class Movie {
                 throw new IllegalArgumentException("Incorrect Price Code");
         }
     }
-    Price _price;
+
     public String getTitle (){
         return _title;
     };
